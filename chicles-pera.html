@@ -63,6 +63,20 @@
 			font-size: 1.5em;
 		}
 
+		/*A partir de aquí edición mia*/
+		.border-color-blue {
+    		border-color: blue;
+		}
+
+		.border-color-blue.total {
+    		border-width: 2px;
+		}
+
+		/*El hijo (strong) del padre (la clase .cart-row)*/
+		.cart-row__info > strong {
+			color: yellow;
+		}
+
 	</style>
 </head>
 
@@ -75,7 +89,7 @@
 			<label for="zip-code">
 				Código zip
 			</label>
-			<input id="zip-code" type="text" placeholder="555333" />
+			<input id="zip-code" class="border-color-blue" type="text" placeholder="555333" />
 			<button id="calculate-delivery">
 				Calcular gastos de envío
 			</button>
@@ -101,7 +115,7 @@
 					-
 				</strong>
 			</div>
-			<div class="cart-row total">
+			<div class="cart-row total border-color-blue" class="color-blue"¡>
 				<div class="cart-row__info">
 					Total
 				</div>
